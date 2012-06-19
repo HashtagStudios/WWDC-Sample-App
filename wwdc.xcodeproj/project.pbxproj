@@ -14,8 +14,9 @@
 		83F088A715902E0300A471AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F088A615902E0300A471AF /* main.m */; };
 		83F088AB15902E0300A471AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F088AA15902E0300A471AF /* AppDelegate.m */; };
 		83F088AE15902E0300A471AF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F088AC15902E0300A471AF /* MainStoryboard.storyboard */; };
-		83F088BC15903AE900A471AF /* SignUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F088BB15903AE900A471AF /* SignUpTableViewController.m */; };
-		83F088BF15903B1000A471AF /* LogInTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F088BE15903B1000A471AF /* LogInTableViewController.m */; };
+		83F088C215904C0000A471AF /* AuthenticationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F088C115904C0000A471AF /* AuthenticationTableViewController.m */; };
+		83F088C515904DC500A471AF /* SignUpAuthenticationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F088C415904DC500A471AF /* SignUpAuthenticationTableViewController.m */; };
+		83F088C815904DD600A471AF /* LogInAuthenticationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F088C715904DD600A471AF /* LogInAuthenticationTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +31,12 @@
 		83F088A915902E0300A471AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83F088AA15902E0300A471AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		83F088AD15902E0300A471AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		83F088BA15903AE900A471AF /* SignUpTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpTableViewController.h; sourceTree = "<group>"; };
-		83F088BB15903AE900A471AF /* SignUpTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpTableViewController.m; sourceTree = "<group>"; };
-		83F088BD15903B1000A471AF /* LogInTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInTableViewController.h; sourceTree = "<group>"; };
-		83F088BE15903B1000A471AF /* LogInTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInTableViewController.m; sourceTree = "<group>"; };
+		83F088C015904C0000A471AF /* AuthenticationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationTableViewController.h; sourceTree = "<group>"; };
+		83F088C115904C0000A471AF /* AuthenticationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationTableViewController.m; sourceTree = "<group>"; };
+		83F088C315904DC500A471AF /* SignUpAuthenticationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpAuthenticationTableViewController.h; sourceTree = "<group>"; };
+		83F088C415904DC500A471AF /* SignUpAuthenticationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpAuthenticationTableViewController.m; sourceTree = "<group>"; };
+		83F088C615904DD600A471AF /* LogInAuthenticationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInAuthenticationTableViewController.h; sourceTree = "<group>"; };
+		83F088C715904DD600A471AF /* LogInAuthenticationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInAuthenticationTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +87,12 @@
 				83F088AA15902E0300A471AF /* AppDelegate.m */,
 				83F088AC15902E0300A471AF /* MainStoryboard.storyboard */,
 				83F088A115902E0300A471AF /* Supporting Files */,
-				83F088BA15903AE900A471AF /* SignUpTableViewController.h */,
-				83F088BB15903AE900A471AF /* SignUpTableViewController.m */,
-				83F088BD15903B1000A471AF /* LogInTableViewController.h */,
-				83F088BE15903B1000A471AF /* LogInTableViewController.m */,
+				83F088C015904C0000A471AF /* AuthenticationTableViewController.h */,
+				83F088C115904C0000A471AF /* AuthenticationTableViewController.m */,
+				83F088C315904DC500A471AF /* SignUpAuthenticationTableViewController.h */,
+				83F088C415904DC500A471AF /* SignUpAuthenticationTableViewController.m */,
+				83F088C615904DD600A471AF /* LogInAuthenticationTableViewController.h */,
+				83F088C715904DD600A471AF /* LogInAuthenticationTableViewController.m */,
 			);
 			path = wwdc;
 			sourceTree = "<group>";
@@ -167,8 +172,9 @@
 			files = (
 				83F088A715902E0300A471AF /* main.m in Sources */,
 				83F088AB15902E0300A471AF /* AppDelegate.m in Sources */,
-				83F088BC15903AE900A471AF /* SignUpTableViewController.m in Sources */,
-				83F088BF15903B1000A471AF /* LogInTableViewController.m in Sources */,
+				83F088C215904C0000A471AF /* AuthenticationTableViewController.m in Sources */,
+				83F088C515904DC500A471AF /* SignUpAuthenticationTableViewController.m in Sources */,
+				83F088C815904DD600A471AF /* LogInAuthenticationTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
