@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SignUpTableViewController.h
 //  wwdc
 //
 //  Created by Chris Lowe on 6/18/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SignUpTableViewController : UITableViewController
 
 @end
