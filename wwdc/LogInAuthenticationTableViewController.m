@@ -15,7 +15,8 @@
 @implementation LogInAuthenticationTableViewController
 
 - (IBAction)loginOrSignUpButtonSelected:(id)sender {
-    NSLog(@"Logging in...");
+    NSLog(@"Logging In...");
+    [self performSegueWithIdentifier:@"userAuthenticatedSegue" sender:self];
 }
 
 @end

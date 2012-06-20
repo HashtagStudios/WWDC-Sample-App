@@ -16,6 +16,7 @@
 
 - (IBAction)loginOrSignUpButtonSelected:(id)sender {
     NSLog(@"Signing Up...");
+    [self performSegueWithIdentifier:@"userAuthenticatedSegue" sender:self];
 }
 
 @end

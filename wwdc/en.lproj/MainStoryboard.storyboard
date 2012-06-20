@@ -96,10 +96,11 @@
                         <outlet property="emailTextField" destination="JcV-X1-VSX" id="QiI-zk-q0F"/>
                         <outlet property="passwordTextField" destination="IQv-S4-MIJ" id="YJx-f9-DvE"/>
                         <outlet property="view" destination="ZvK-6y-4tU" id="F60-Gx-SMh"/>
+                        <segue destination="Mgp-kJ-H7o" kind="push" identifier="userAuthenticatedSegue" id="xPT-2C-AZQ"/>
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="820" y="-686"/>
+            <point key="canvasLocation" x="332" y="-798"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tc5-Jx-uBe">
@@ -119,7 +120,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="251" y="-686"/>
+            <point key="canvasLocation" x="-237" y="-798"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hhv-5a-OQy">
@@ -140,7 +141,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="251" y="43"/>
+            <point key="canvasLocation" x="-237" y="-69"/>
         </scene>
         <!--Sign Up Authentication Table View Controller - WWDC Sign Up-->
         <scene sceneID="JLA-Dh-I7G">
@@ -257,10 +258,70 @@
                         <outlet property="emailTextField" destination="bJz-2T-pLu" id="64q-LY-Cpx"/>
                         <outlet property="passwordTextField" destination="J1q-AC-WjY" id="SIK-c3-zRj"/>
                         <outlet property="view" destination="330-yZ-OaF" id="w3B-gI-Ii5"/>
+                        <segue destination="Mgp-kJ-H7o" kind="push" identifier="userAuthenticatedSegue" id="w0d-mM-cUU"/>
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="820" y="43"/>
+            <point key="canvasLocation" x="332" y="-69"/>
+        </scene>
+        <!--Ticket Status Table View Controller - WWDC Ticket-->
+        <scene sceneID="oCi-KQ-DNs">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJ1-Ld-mWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Mgp-kJ-H7o" customClass="TicketStatusTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="iNq-DK-Pt3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="8cs-m8-wYb">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="GF6-MN-8XP" detailTextLabel="3yj-UV-crF" style="IBUITableViewCellStyleValue1" id="M4M-vB-7gd">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GF6-MN-8XP">
+                                                    <rect key="frame" x="10" y="11" width="52" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3yj-UV-crF">
+                                                    <rect key="frame" x="246" y="11" width="44" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Mgp-kJ-H7o" id="VpZ-Ny-nO5"/>
+                            <outlet property="delegate" destination="Mgp-kJ-H7o" id="s8G-RJ-4dH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="WWDC Ticket" id="6Pz-xk-HpN">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="Aaa-6W-C37">
+                            <connections>
+                                <action selector="signOutButtonSelected:" destination="Mgp-kJ-H7o" id="Lpk-BK-ge4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ticketStatusTableCell" destination="M4M-vB-7gd" id="LBm-AR-Of7"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1342" y="-366"/>
         </scene>
     </scenes>
     <classes>
@@ -279,10 +340,20 @@
         <class className="SignUpAuthenticationTableViewController" superclassName="AuthenticationTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUpAuthenticationTableViewController.h"/>
         </class>
+        <class className="TicketStatusTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TicketStatusTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="signOutButtonSelected:"/>
+                <relationship kind="outlet" name="ticketStatusTableCell" candidateClass="UITableViewCell"/>
+            </relationships>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="xPT-2C-AZQ"/>
+    </inferredMetricsTieBreakers>
 </document>

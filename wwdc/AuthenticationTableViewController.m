@@ -61,9 +61,9 @@
     return YES;
 }
 
-// This method intentionally left blank
 // Subclasses will over-ride and implement specific logic
 - (IBAction)loginOrSignUpButtonSelected:(id)sender {
+    // This method intentionally left blank
 }
 
 @end
