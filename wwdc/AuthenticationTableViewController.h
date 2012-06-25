@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TicketStatusTableViewController.h"
 
 typedef enum {
     kSignUpEmailField       = 100,

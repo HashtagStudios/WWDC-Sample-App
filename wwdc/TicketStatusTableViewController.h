@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TicketStatusTableViewController : UITableViewController
-
+@property (nonatomic, strong) NSDictionary *ticketDetails;
 @end
